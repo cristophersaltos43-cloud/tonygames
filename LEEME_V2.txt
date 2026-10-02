@@ -1,0 +1,28 @@
+TONY GAMES V2 — SUBIR A GITHUB
+
+1. Entra a tu repositorio de Tony Games.
+2. Pulsa Add file > Upload files.
+3. Arrastra TODOS los archivos de esta carpeta.
+4. Si GitHub avisa que index.html ya existe, es normal: esta versión lo reemplaza.
+5. Pulsa Commit changes.
+6. GitHub Pages reconstruirá el sitio automáticamente.
+7. Espera 1–3 minutos y abre tu enlace público.
+
+ARCHIVOS NUEVOS IMPORTANTES
+- robots.txt: indica a buscadores qué pueden rastrear.
+- sitemap.xml: lista las páginas del sitio.
+- codigos-free-fire.html
+- seguridad-gamer.html
+- minecraft-ideas.html
+
+ANTES DE ADSENSE
+- Añade un correo real en contacto.html.
+- Publica más contenido propio y útil de manera constante.
+- No llenes la web de páginas casi idénticas.
+- No publiques códigos falsos ni promesas engañosas.
+- No pidas a los usuarios que hagan clic en anuncios.
+
+NOTA
+El sitemap está configurado con:
+https://cristophersaltos-cloud.github.io/tonygames
+Si tu URL pública exacta es diferente, avísame y lo ajustamos.

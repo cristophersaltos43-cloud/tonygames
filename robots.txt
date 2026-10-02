@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cristophersaltos-cloud.github.io/tonygames/sitemap.xml
