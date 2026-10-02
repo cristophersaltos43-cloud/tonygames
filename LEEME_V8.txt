@@ -1,0 +1,10 @@
+TONY GAMES V8 — RECARGAS SEGURAS
+
+- Nueva sección Recargas.
+- Free Fire y COD:M: recarga por ID en centros oficiales.
+- Roblox, Minecraft, Brawl Stars, Fortnite y GTA Online: botones a compra oficial.
+- Botones de compra/recarga añadidos también dentro de cada página de juego.
+- Tony Games no procesa pagos, tarjetas ni contraseñas.
+- Buscador y sitemap actualizados.
+
+Para publicar: sube/reemplaza todo el contenido manteniendo la carpeta assets.
