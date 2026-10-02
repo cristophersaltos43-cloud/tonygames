@@ -1,0 +1,14 @@
+TONY GAMES V5.1 — ENLACES CORREGIDOS
+
+Cambios:
+- Las tarjetas de Free Fire, Roblox, Minecraft, Brawl Stars, Fortnite, Call of Duty y GTA V ahora abren páginas reales.
+- Los artículos destacados ahora son clicables.
+- Juegos Populares ahora tiene enlaces.
+- Se añadieron páginas nuevas para Roblox, Brawl Stars, Fortnite, Call of Duty y GTA V.
+- Sitemap actualizado.
+
+Para subir:
+1. En la raíz de GitHub sube todos los archivos HTML, sitemap.xml y robots.txt.
+2. No hace falta volver a subir las imágenes de assets si ya están.
+3. Commit changes.
+4. Espera 1–2 minutos y Ctrl+F5.
