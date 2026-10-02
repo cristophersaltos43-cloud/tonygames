@@ -1,0 +1,23 @@
+TONY GAMES V3 — VERSIÓN VISUAL
+
+Esta versión incluye:
+- Portada visual gamer con imagen original.
+- Segundo visual destacado.
+- Tarjetas por juego.
+- Buscador interno.
+- Secciones de contenido popular.
+- Artículos y páginas legales de la versión 2.
+- robots.txt y sitemap.xml.
+- Diseño responsive para computadora y celular.
+
+CÓMO SUBIRLA
+1. Descomprime Tony_Games_V3.zip.
+2. Entra a tu repositorio de GitHub.
+3. Add file > Upload files.
+4. Arrastra TODOS los archivos y también la carpeta assets.
+5. Pulsa Commit changes.
+6. GitHub Pages actualizará el sitio automáticamente.
+7. Espera unos minutos y recarga tu enlace.
+
+IMPORTANTE
+No borres la carpeta assets: ahí están las imágenes de la portada.
