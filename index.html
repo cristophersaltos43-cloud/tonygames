@@ -6,7 +6,7 @@
 <title>Tony Games | Portal gamer</title>
 <meta name="description" content="Tony Games: guías, códigos, noticias y seguridad para gamers.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://cristophersaltos-cloud.github.io/tonygames/">
+<link rel="canonical" href="https://cristophersaltos43-cloud.github.io/tonygames/">
 <style>
 :root{--bg:#06111d;--nav:#081827;--panel:#0d1d2d;--panel2:#10253a;--line:#213c56;--text:#fff;--muted:#aebdcc;--blue:#00b8ff;--cyan:#39d8ff;--lime:#8aff38;--yellow:#ffd632;--max:1536px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#06111d;color:#fff}
@@ -32,13 +32,32 @@ a{color:inherit;text-decoration:none}.page{max-width:var(--max);margin:auto;back
 .footer{padding:28px 20px 45px;color:#92a6b8;border-top:1px solid #173149;margin-top:10px}
 @media(max-width:1050px){.nav{gap:16px;font-size:13px}.heroLeft,.heroRight{opacity:.42}.heroCenter{left:8%;right:8%}.games{grid-template-columns:repeat(4,1fr)}.content{grid-template-columns:1fr}.side{padding-top:0}}
 @media(max-width:720px){.nav{display:none}.top{padding:0 16px}.hero{height:430px}.heroLeft,.heroRight{width:50%;opacity:.28}.heroCenter{left:16px;right:16px}.heroCenter h1{font-size:31px}.heroCenter h1 span{font-size:37px}.games{grid-template-columns:repeat(2,1fr);padding:14px}.content{padding:8px 14px 24px}.articles{grid-template-columns:1fr}.smallRow{grid-template-columns:1fr}}
+
+.creatorSection{padding:10px 20px 28px}
+.sectionTop{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:16px}
+.sectionTop h2{font-size:30px;margin:0}.sectionTop p{color:#9fb1c2;margin:4px 0 0}.sectionLink{color:#47d8ff;font-weight:850}
+.creatorGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.creatorCard{background:linear-gradient(180deg,#102338,#0a1827);border:1px solid #24435d;border-radius:16px;padding:16px;display:flex;flex-direction:column;min-height:188px}
+.creatorGame{font-size:11px;font-weight:950;color:#61ddff;letter-spacing:.08em;text-transform:uppercase}
+.creatorCard h3{font-size:20px;margin:8px 0 6px}.creatorCard p{font-size:13px;color:#a9bac8;margin:0 0 14px;flex:1}
+.creatorBtns{display:flex;gap:8px;flex-wrap:wrap}.creatorBtn{padding:9px 11px;border-radius:10px;background:#0a84c6;font-size:12px;font-weight:900}
+.creatorBtn.alt{background:#172b3e;border:1px solid #2c4c67}
+.videoSection{padding:0 20px 30px}.videoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.videoCard{background:#0d1c2c;border:1px solid #1c3650;border-radius:14px;overflow:hidden}
+.videoFrame{aspect-ratio:16/9;width:100%;border:0;display:block}.videoInfo{padding:12px 14px}.videoInfo strong{display:block;margin-bottom:5px}.videoInfo span{font-size:12px;color:#94a9bb}
+.resourceStrip{margin:0 20px 28px;padding:18px;background:linear-gradient(90deg,#0c2c45,#0d1c2d);border:1px solid #23455e;border-radius:16px}
+.resourceStrip h2{margin:0 0 8px;font-size:25px}.resourceStrip p{margin:0 0 14px;color:#adc0cf}
+.resourceBtns{display:flex;flex-wrap:wrap;gap:9px}.resourceBtns a{padding:10px 12px;background:#102a40;border:1px solid #29506c;border-radius:10px;font-size:13px;font-weight:800}
+@media(max-width:1050px){.creatorGrid{grid-template-columns:repeat(2,1fr)}.videoGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.creatorGrid,.videoGrid{grid-template-columns:1fr}.sectionTop{align-items:flex-start;flex-direction:column}}
+
 </style>
 </head>
 <body>
 <div class="page">
 <header class="top">
   <a class="brand" href="#"><span class="logo">🎮</span><span>TONY <b>GAMES</b> 👑</span></a>
-  <nav class="nav"><a class="active" href="#">⌂ Inicio</a><a href="#articulos">Guías</a><a href="codigos-free-fire.html">Códigos</a><a href="#articulos">Noticias</a><a href="#juegos">Juegos⌄</a><a href="seguridad-gamer.html">Consejos</a><a href="seguridad-gamer.html">Seguridad</a><a href="contacto.html">Contacto</a></nav>
+  <nav class="nav"><a class="active" href="#">⌂ Inicio</a><a href="#articulos">Guías</a><a href="codigos-free-fire.html">Códigos</a><a href="#articulos">Noticias</a><a href="#juegos">Juegos⌄</a><a href="creadores.html">Creadores</a><a href="seguridad-gamer.html">Consejos</a><a href="seguridad-gamer.html">Seguridad</a><a href="contacto.html">Contacto</a></nav>
   <div class="searchIcon">⌕</div>
 </header>
 
@@ -61,6 +80,40 @@ a{color:inherit;text-decoration:none}.page{max-width:var(--max);margin:auto;back
   <a class="game" href="fortnite.html" data-search="fortnite"><img src="assets/game-fortnite.png"><strong>Fortnite</strong></a>
   <a class="game" href="call-of-duty.html" data-search="call of duty"><img src="assets/game-cod.png"><strong>Call of Duty</strong></a>
   <a class="game" href="gta-v.html" data-search="gta v"><img src="assets/game-gta.png"><strong>GTA V</strong></a>
+</section>
+
+
+<section class="creatorSection" id="creadores">
+  <div class="sectionTop">
+    <div><h2>⭐ Creadores que vale la pena seguir</h2><p>Una selección de canales y sitios externos para descubrir más contenido de cada juego.</p></div>
+    <a class="sectionLink" href="creadores.html">Ver todos →</a>
+  </div>
+  <div class="creatorGrid">
+    <article class="creatorCard">
+      <span class="creatorGame">FREE FIRE</span>
+      <h3>TheDonato</h3>
+      <p>Gameplays, retos y contenido de Free Fire. Enlace al canal del creador.</p>
+      <div class="creatorBtns"><a class="creatorBtn" href="https://www.youtube.com/@thedonato" target="_blank" rel="noopener noreferrer">Ver canal ↗</a><a class="creatorBtn alt" href="codigos-free-fire.html">Guías Tony Games</a></div>
+    </article>
+    <article class="creatorCard">
+      <span class="creatorGame">MINECRAFT / ROBLOX</span>
+      <h3>Mikecrack</h3>
+      <p>Contenido de Minecraft, Roblox y otras series. Sitio oficial con videos, noticias y proyectos.</p>
+      <div class="creatorBtns"><a class="creatorBtn" href="https://www.mikecrack.com/" target="_blank" rel="noopener noreferrer">Sitio oficial ↗</a><a class="creatorBtn alt" href="minecraft-ideas.html">Minecraft</a></div>
+    </article>
+    <article class="creatorCard">
+      <span class="creatorGame">BRAWL STARS</span>
+      <h3>Trebor</h3>
+      <p>Contenido centrado en Brawl Stars, modos de juego y novedades.</p>
+      <div class="creatorBtns"><a class="creatorBtn" href="https://www.youtube.com/watch?v=6Yp9hYwSju4" target="_blank" rel="noopener noreferrer">Ver contenido ↗</a><a class="creatorBtn alt" href="brawl-stars.html">Guías Tony Games</a></div>
+    </article>
+    <article class="creatorCard">
+      <span class="creatorGame">CALL OF DUTY</span>
+      <h3>Soki</h3>
+      <p>Contenido especializado en Call of Duty, shooters y configuraciones.</p>
+      <div class="creatorBtns"><a class="creatorBtn" href="https://www.youtube.com/@Soki" target="_blank" rel="noopener noreferrer">Ver canal ↗</a><a class="creatorBtn alt" href="call-of-duty.html">Guías Tony Games</a></div>
+    </article>
+  </div>
 </section>
 
 <section class="content" id="articulos">
@@ -90,6 +143,41 @@ a{color:inherit;text-decoration:none}.page{max-width:var(--max);margin:auto;back
     </div></div>
   </aside>
 </section>
+
+<section class="videoSection">
+  <div class="sectionTop">
+    <div><h2>▶ Videos recomendados</h2><p>Contenido externo reproducido con el reproductor oficial de YouTube.</p></div>
+  </div>
+  <div class="videoGrid">
+    <article class="videoCard">
+      <iframe class="videoFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/9IVnmBHMkxU" title="TheDonato - Free Fire" allowfullscreen></iframe>
+      <div class="videoInfo"><strong>TheDonato — Free Fire</strong><span>Video externo de YouTube</span></div>
+    </article>
+    <article class="videoCard">
+      <iframe class="videoFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/6Yp9hYwSju4" title="Trebor - Brawl Stars" allowfullscreen></iframe>
+      <div class="videoInfo"><strong>Trebor — Brawl Stars</strong><span>Video externo de YouTube</span></div>
+    </article>
+    <article class="videoCard">
+      <iframe class="videoFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/5lc5mjZD4Vc" title="Soki - Call of Duty" allowfullscreen></iframe>
+      <div class="videoInfo"><strong>Soki — Call of Duty</strong><span>Video externo de YouTube</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="resourceStrip">
+  <h2>🔗 Recursos oficiales y seguros</h2>
+  <p>Cuando una guía dependa de una cuenta, un canje o una descarga, Tony Games te manda a la fuente oficial.</p>
+  <div class="resourceBtns">
+    <a href="https://reward.ff.garena.com/" target="_blank" rel="noopener noreferrer">Garena Rewards ↗</a>
+    <a href="https://www.roblox.com/" target="_blank" rel="noopener noreferrer">Roblox ↗</a>
+    <a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer">Minecraft ↗</a>
+    <a href="https://supercell.com/en/games/brawlstars/" target="_blank" rel="noopener noreferrer">Brawl Stars ↗</a>
+    <a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer">Fortnite ↗</a>
+    <a href="https://www.callofduty.com/" target="_blank" rel="noopener noreferrer">Call of Duty ↗</a>
+    <a href="https://www.rockstargames.com/gta-v" target="_blank" rel="noopener noreferrer">GTA V ↗</a>
+  </div>
+</section>
+
 <footer class="footer">Tony Games — Portal gamer independiente.</footer>
 </div>
 <script>

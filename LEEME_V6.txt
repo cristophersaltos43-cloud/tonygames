@@ -1,0 +1,22 @@
+TONY GAMES V6 — PORTAL MÁS COMPLETO
+
+Qué cambia:
+- Nueva sección "Creadores" en la portada.
+- Nueva página creadores.html.
+- Enlaces externos a creadores y recursos oficiales.
+- Tres videos de YouTube incrustados con modo de privacidad mejorada.
+- Cada página de juego recomienda un creador relacionado.
+- Se corrigió la URL del sitio para usar cristophersaltos43-cloud.
+- sitemap.xml y robots.txt actualizados.
+
+IMPORTANTE:
+- Tony Games se presenta como portal independiente.
+- No copia artículos ni videos de otros creadores.
+- Los videos se muestran mediante el reproductor de YouTube y los enlaces externos identifican que sales de Tony Games.
+
+PARA SUBIR A GITHUB:
+1. Descomprime este ZIP.
+2. En la raíz del repositorio sube/reemplaza todos los archivos.
+3. No es necesario reemplazar assets si las imágenes de V5 ya están.
+4. Commit changes.
+5. Espera 1–2 minutos y recarga con Ctrl+F5.
