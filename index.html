@@ -1,190 +1,32 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tony Games | Portal gamer</title>
-<meta name="description" content="Tony Games: guías, códigos, noticias y seguridad para gamers.">
-<meta name="robots" content="index,follow">
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tony Games — Portal gamer | Tony Games</title>
+<meta name="description" content="Guías, novedades oficiales, seguridad, creadores y recursos de Free Fire, Roblox, Minecraft, Brawl Stars, Fortnite, Call of Duty y GTA V."><meta name="robots" content="index,follow">
 <link rel="canonical" href="https://cristophersaltos43-cloud.github.io/tonygames/">
-<style>
-:root{--bg:#06111d;--nav:#081827;--panel:#0d1d2d;--panel2:#10253a;--line:#213c56;--text:#fff;--muted:#aebdcc;--blue:#00b8ff;--cyan:#39d8ff;--lime:#8aff38;--yellow:#ffd632;--max:1536px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#06111d;color:#fff}
-a{color:inherit;text-decoration:none}.page{max-width:var(--max);margin:auto;background:linear-gradient(180deg,#06111d,#071522 60%,#06111d)}
-.top{height:70px;background:#071827;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:space-between;padding:0 7.8%;position:sticky;top:0;z-index:100}
-.brand{display:flex;align-items:center;gap:12px;font-weight:950;font-size:24px}.brand .logo{font-size:31px}.brand b{color:#13bfff}
-.nav{display:flex;align-items:center;gap:32px;font-size:15px}.nav a{color:#f3f8ff}.nav .active{background:#0c4675;padding:12px 16px;border-radius:10px}.searchIcon{font-size:28px}
-.hero{height:315px;position:relative;overflow:hidden;background:linear-gradient(90deg,#0c2137 0,#0b1c31 35%,#0c1e34 65%,#0c2137 100%)}
-.heroLeft,.heroRight{position:absolute;top:0;height:100%;object-fit:cover}.heroLeft{left:0;width:29.6%}.heroRight{right:0;width:29.7%}
-.heroCenter{position:absolute;left:29.5%;right:29.5%;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px;text-align:center}
-.heroCenter h1{font-size:42px;line-height:1.05;margin:0 0 10px;font-style:italic;text-transform:uppercase;text-shadow:0 2px 0 #101828;font-weight:950}
-.heroCenter h1 span{display:block;color:#28c7ff;font-size:50px}.heroCenter p{color:#d0d8e2;margin:0 0 16px}
-.searchBar{width:min(660px,100%);display:flex;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 0 0 2px rgba(255,255,255,.12)}
-.searchBar input{flex:1;border:0;outline:0;padding:14px 18px;font-size:15px}.searchBar button{width:110px;border:0;background:#14aef0;color:#fff;font-weight:800}
-.badges{display:flex;gap:14px;margin-top:15px;flex-wrap:wrap;justify-content:center}.badge{padding:9px 14px;border-radius:20px;background:#0b1b2c;border:1px solid rgba(255,255,255,.05);font-size:13px}
-.games{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;padding:18px 20px 20px;background:#081421}
-.game{border-radius:12px;overflow:hidden;border:1px solid #1d3550;background:#0e1d2c;transition:.2s}.game:hover{transform:translateY(-3px);box-shadow:0 0 0 2px #ffd400}.game img{width:100%;height:100px;object-fit:cover;display:block}.game strong{display:block;text-align:center;padding:9px 6px 10px;font-size:14px}
-.content{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:18px;padding:8px 20px 30px}
-.main h2{font-size:30px;margin:14px 0 20px}.main h2 span{margin-right:8px}
-.articles{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px}.article{background:#0d1c2c;border:1px solid #1c3650;border-radius:14px;overflow:hidden}.article img{width:100%;height:225px;object-fit:cover;display:block}.article.big img{height:225px}.articleBody{padding:14px 16px 16px}.label{display:inline-block;padding:5px 9px;border-radius:12px;background:#ff344d;font-size:11px;font-weight:900}.label.purple{background:#7c36f6}.label.green{background:#14a04d}.article h3{font-size:21px;margin:10px 0 8px;line-height:1.15}.article p{color:#aebdca;font-size:14px;margin:0 0 12px}.meta{color:#95a9bb;font-size:12px;display:flex;gap:18px}
-.smallRow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}.smallCard{background:#0d1c2c;border:1px solid #1c3650;border-radius:12px;overflow:hidden}.smallCard img{width:100%;height:90px;object-fit:cover;display:block}.smallCard div{padding:10px}.smallCard strong{font-size:14px;line-height:1.15}
-.side{padding-top:58px}.box{background:#0c1b2b;border:1px solid #1c3650;border-radius:14px;padding:15px;margin-bottom:14px}.box h3{margin:0 0 14px;font-size:18px}.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.social{height:44px;border-radius:11px;display:grid;place-items:center;background:#10253a;font-weight:900}.popular{display:grid;gap:7px}.popularItem{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.07)}.leftp{display:flex;align-items:center;gap:10px}.num{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#0d2a42;font-size:12px}.num.first{background:#ffd01a;color:#111;font-weight:900}
-.footer{padding:28px 20px 45px;color:#92a6b8;border-top:1px solid #173149;margin-top:10px}
-@media(max-width:1050px){.nav{gap:16px;font-size:13px}.heroLeft,.heroRight{opacity:.42}.heroCenter{left:8%;right:8%}.games{grid-template-columns:repeat(4,1fr)}.content{grid-template-columns:1fr}.side{padding-top:0}}
-@media(max-width:720px){.nav{display:none}.top{padding:0 16px}.hero{height:430px}.heroLeft,.heroRight{width:50%;opacity:.28}.heroCenter{left:16px;right:16px}.heroCenter h1{font-size:31px}.heroCenter h1 span{font-size:37px}.games{grid-template-columns:repeat(2,1fr);padding:14px}.content{padding:8px 14px 24px}.articles{grid-template-columns:1fr}.smallRow{grid-template-columns:1fr}}
-
-.creatorSection{padding:10px 20px 28px}
-.sectionTop{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:16px}
-.sectionTop h2{font-size:30px;margin:0}.sectionTop p{color:#9fb1c2;margin:4px 0 0}.sectionLink{color:#47d8ff;font-weight:850}
-.creatorGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.creatorCard{background:linear-gradient(180deg,#102338,#0a1827);border:1px solid #24435d;border-radius:16px;padding:16px;display:flex;flex-direction:column;min-height:188px}
-.creatorGame{font-size:11px;font-weight:950;color:#61ddff;letter-spacing:.08em;text-transform:uppercase}
-.creatorCard h3{font-size:20px;margin:8px 0 6px}.creatorCard p{font-size:13px;color:#a9bac8;margin:0 0 14px;flex:1}
-.creatorBtns{display:flex;gap:8px;flex-wrap:wrap}.creatorBtn{padding:9px 11px;border-radius:10px;background:#0a84c6;font-size:12px;font-weight:900}
-.creatorBtn.alt{background:#172b3e;border:1px solid #2c4c67}
-.videoSection{padding:0 20px 30px}.videoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.videoCard{background:#0d1c2c;border:1px solid #1c3650;border-radius:14px;overflow:hidden}
-.videoFrame{aspect-ratio:16/9;width:100%;border:0;display:block}.videoInfo{padding:12px 14px}.videoInfo strong{display:block;margin-bottom:5px}.videoInfo span{font-size:12px;color:#94a9bb}
-.resourceStrip{margin:0 20px 28px;padding:18px;background:linear-gradient(90deg,#0c2c45,#0d1c2d);border:1px solid #23455e;border-radius:16px}
-.resourceStrip h2{margin:0 0 8px;font-size:25px}.resourceStrip p{margin:0 0 14px;color:#adc0cf}
-.resourceBtns{display:flex;flex-wrap:wrap;gap:9px}.resourceBtns a{padding:10px 12px;background:#102a40;border:1px solid #29506c;border-radius:10px;font-size:13px;font-weight:800}
-@media(max-width:1050px){.creatorGrid{grid-template-columns:repeat(2,1fr)}.videoGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:720px){.creatorGrid,.videoGrid{grid-template-columns:1fr}.sectionTop{align-items:flex-start;flex-direction:column}}
-
-</style>
-</head>
-<body>
-<div class="page">
-<header class="top">
-  <a class="brand" href="#"><span class="logo">🎮</span><span>TONY <b>GAMES</b> 👑</span></a>
-  <nav class="nav"><a class="active" href="#">⌂ Inicio</a><a href="#articulos">Guías</a><a href="codigos-free-fire.html">Códigos</a><a href="#articulos">Noticias</a><a href="#juegos">Juegos⌄</a><a href="creadores.html">Creadores</a><a href="seguridad-gamer.html">Consejos</a><a href="seguridad-gamer.html">Seguridad</a><a href="contacto.html">Contacto</a></nav>
-  <div class="searchIcon">⌕</div>
-</header>
-
+<meta property="og:title" content="Tony Games — Portal gamer | Tony Games"><meta property="og:description" content="Guías, novedades oficiales, seguridad, creadores y recursos de Free Fire, Roblox, Minecraft, Brawl Stars, Fortnite, Call of Duty y GTA V.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://cristophersaltos43-cloud.github.io/tonygames/">
+<link rel="stylesheet" href="assets/site-v7.css"></head><body><header class="top"><div class="wrap navbar">
+    <a class="brand" href="index.html">🎮 <span>TONY <b>GAMES</b></span></a>
+    <nav class="navlinks"><a class="navpill" href="index.html">Inicio</a><a class="" href="noticias.html">Novedades</a><a class="" href="creadores.html">Creadores</a><a class="" href="buscar.html">Buscar</a><a class="" href="favoritos.html">Favoritos</a><a class="" href="sobre.html">Sobre Tony Games</a><a class="" href="contacto.html">Contacto</a></nav></div></header>
+<main>
 <section class="hero">
-  <img class="heroLeft" src="assets/hero-left.png" alt="">
-  <img class="heroRight" src="assets/hero-right.png" alt="">
-  <div class="heroCenter">
+  <img class="heroBgL" src="assets/hero-left.png" alt="">
+  <img class="heroBgR" src="assets/hero-right.png" alt="">
+  <div class="heroInner">
     <h1>TODO LO QUE UN GAMER <span>BUSCA EN UN SOLO LUGAR</span></h1>
-    <p>Guías, códigos, noticias, consejos y mucho más de tus juegos favoritos.</p>
-    <div class="searchBar"><input id="search" placeholder="Buscar guías, códigos o juegos..."><button onclick="buscar()">Buscar</button></div>
-    <div class="badges"><div class="badge">🛡 Contenido verificado</div><div class="badge">⚡ Actualizaciones constantes</div><div class="badge">🎮 Guías fáciles de seguir</div></div>
+    <p>Guías propias, novedades oficiales, seguridad, creadores y recursos para explorar tus juegos favoritos.</p>
+    <form class="searchForm" onsubmit="tgSearchSubmit(event)"><input name="q" aria-label="Buscar" placeholder="Busca Free Fire, Robux, Minecraft, sensibilidad..."><button>Buscar</button></form>
+    <div class="chips"><span class="chip">🛡 Contenido seguro</span><span class="chip">📚 21 guías nuevas</span><span class="chip">⭐ Favoritos</span><span class="chip">🔎 Buscador real</span></div>
   </div>
 </section>
-
-<section class="games" id="juegos">
-  <a class="game" href="codigos-free-fire.html" data-search="free fire codigos diamantes"><img src="assets/game-freefire.png"><strong>Free Fire</strong></a>
-  <a class="game" href="roblox.html" data-search="roblox robux"><img src="assets/game-roblox.png"><strong>Roblox</strong></a>
-  <a class="game" href="minecraft-ideas.html" data-search="minecraft semillas"><img src="assets/game-minecraft.png"><strong>Minecraft</strong></a>
-  <a class="game" href="brawl-stars.html" data-search="brawl stars"><img src="assets/game-brawl.png"><strong>Brawl Stars</strong></a>
-  <a class="game" href="fortnite.html" data-search="fortnite"><img src="assets/game-fortnite.png"><strong>Fortnite</strong></a>
-  <a class="game" href="call-of-duty.html" data-search="call of duty"><img src="assets/game-cod.png"><strong>Call of Duty</strong></a>
-  <a class="game" href="gta-v.html" data-search="gta v"><img src="assets/game-gta.png"><strong>GTA V</strong></a>
-</section>
-
-
-<section class="creatorSection" id="creadores">
-  <div class="sectionTop">
-    <div><h2>⭐ Creadores que vale la pena seguir</h2><p>Una selección de canales y sitios externos para descubrir más contenido de cada juego.</p></div>
-    <a class="sectionLink" href="creadores.html">Ver todos →</a>
-  </div>
-  <div class="creatorGrid">
-    <article class="creatorCard">
-      <span class="creatorGame">FREE FIRE</span>
-      <h3>TheDonato</h3>
-      <p>Gameplays, retos y contenido de Free Fire. Enlace al canal del creador.</p>
-      <div class="creatorBtns"><a class="creatorBtn" href="https://www.youtube.com/@thedonato" target="_blank" rel="noopener noreferrer">Ver canal ↗</a><a class="creatorBtn alt" href="codigos-free-fire.html">Guías Tony Games</a></div>
-    </article>
-    <article class="creatorCard">
-      <span class="creatorGame">MINECRAFT / ROBLOX</span>
-      <h3>Mikecrack</h3>
-      <p>Contenido de Minecraft, Roblox y otras series. Sitio oficial con videos, noticias y proyectos.</p>
-      <div class="creatorBtns"><a class="creatorBtn" href="https://www.mikecrack.com/" target="_blank" rel="noopener noreferrer">Sitio oficial ↗</a><a class="creatorBtn alt" href="minecraft-ideas.html">Minecraft</a></div>
-    </article>
-    <article class="creatorCard">
-      <span class="creatorGame">BRAWL STARS</span>
-      <h3>Trebor</h3>
-      <p>Contenido centrado en Brawl Stars, modos de juego y novedades.</p>
-      <div class="creatorBtns"><a class="creatorBtn" href="https://www.youtube.com/watch?v=6Yp9hYwSju4" target="_blank" rel="noopener noreferrer">Ver contenido ↗</a><a class="creatorBtn alt" href="brawl-stars.html">Guías Tony Games</a></div>
-    </article>
-    <article class="creatorCard">
-      <span class="creatorGame">CALL OF DUTY</span>
-      <h3>Soki</h3>
-      <p>Contenido especializado en Call of Duty, shooters y configuraciones.</p>
-      <div class="creatorBtns"><a class="creatorBtn" href="https://www.youtube.com/@Soki" target="_blank" rel="noopener noreferrer">Ver canal ↗</a><a class="creatorBtn alt" href="call-of-duty.html">Guías Tony Games</a></div>
-    </article>
-  </div>
-</section>
-
-<section class="content" id="articulos">
-  <main class="main">
-    <h2><span>🔥</span>Artículos Destacados</h2>
-    <div class="articles">
-      <article class="article big"><img src="assets/article-freefire.png"><div class="articleBody"><span class="label">CÓDIGOS</span><h3><a href="codigos-free-fire.html">Códigos de Free Fire hoy</a></h3><p>Guía para canjear códigos de Free Fire de forma segura y revisar recompensas.</p><div class="meta"><span>📅 1 oct. 2026</span><span>◷ 5 min</span></div></div></article>
-      <article class="article"><img src="assets/article-roblox.png"><div class="articleBody"><span class="label purple">GUÍA</span><h3><a href="roblox.html">Cómo conseguir Robux de forma segura</a></h3><p>Métodos oficiales, consejos y errores que debes evitar.</p><div class="meta"><span>📅 29 sep. 2026</span><span>◷ 6 min</span></div></div></article>
-      <article class="article"><img src="assets/article-minecraft.png"><div class="articleBody"><span class="label green">GUÍA</span><h3><a href="minecraft-ideas.html">Las mejores semillas de Minecraft</a></h3><p>Ideas para supervivencia, aldeas y biomas interesantes.</p><div class="meta"><span>📅 27 sep. 2026</span><span>◷ 4 min</span></div></div></article>
-    </div>
-    <div class="smallRow">
-      <div class="smallCard"><img src="assets/small-brawl.png"><div><span class="label">CONSEJOS</span><br><strong><a href="brawl-stars.html">Consejos para mejorar en Brawl Stars</a></strong></div></div>
-      <div class="smallCard"><img src="assets/small-fortnite.png"><div><span class="label purple">NOTICIAS</span><br><strong><a href="fortnite.html">Novedades de Fortnite</a></strong></div></div>
-      <div class="smallCard"><img src="assets/small-cod.png"><div><span class="label green">GUÍA</span><br><strong><a href="call-of-duty.html">Configuraciones para Call of Duty</a></strong></div></div>
-    </div>
-  </main>
-  <aside class="side">
-    <div class="box"><h3>🎮 Síguenos</h3><div class="socials"><div class="social">▶</div><div class="social">♪</div><div class="social">◎</div><div class="social">◉</div></div><p style="color:#9eb0c2;font-size:13px">¡Únete a nuestra comunidad gamer!</p></div>
-    <div class="box"><h3>🎮 Juegos Populares</h3><div class="popular">
-      <div class="popularItem"><div class="leftp"><span class="num first">1</span><a href="codigos-free-fire.html"><strong>Free Fire</strong></a></div><span>›</span></div>
-      <div class="popularItem"><div class="leftp"><span class="num">2</span><a href="roblox.html"><strong>Roblox</strong></a></div><span>›</span></div>
-      <div class="popularItem"><div class="leftp"><span class="num">3</span><a href="minecraft-ideas.html"><strong>Minecraft</strong></a></div><span>›</span></div>
-      <div class="popularItem"><div class="leftp"><span class="num">4</span><a href="brawl-stars.html"><strong>Brawl Stars</strong></a></div><span>›</span></div>
-      <div class="popularItem"><div class="leftp"><span class="num">5</span><a href="fortnite.html"><strong>Fortnite</strong></a></div><span>›</span></div>
-      <div class="popularItem"><div class="leftp"><span class="num">6</span><a href="call-of-duty.html"><strong>Call of Duty</strong></a></div><span>›</span></div>
-      <div class="popularItem"><div class="leftp"><span class="num">7</span><a href="gta-v.html"><strong>GTA V</strong></a></div><span>›</span></div>
-    </div></div>
-  </aside>
-</section>
-
-<section class="videoSection">
-  <div class="sectionTop">
-    <div><h2>▶ Videos recomendados</h2><p>Contenido externo reproducido con el reproductor oficial de YouTube.</p></div>
-  </div>
-  <div class="videoGrid">
-    <article class="videoCard">
-      <iframe class="videoFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/9IVnmBHMkxU" title="TheDonato - Free Fire" allowfullscreen></iframe>
-      <div class="videoInfo"><strong>TheDonato — Free Fire</strong><span>Video externo de YouTube</span></div>
-    </article>
-    <article class="videoCard">
-      <iframe class="videoFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/6Yp9hYwSju4" title="Trebor - Brawl Stars" allowfullscreen></iframe>
-      <div class="videoInfo"><strong>Trebor — Brawl Stars</strong><span>Video externo de YouTube</span></div>
-    </article>
-    <article class="videoCard">
-      <iframe class="videoFrame" loading="lazy" src="https://www.youtube-nocookie.com/embed/5lc5mjZD4Vc" title="Soki - Call of Duty" allowfullscreen></iframe>
-      <div class="videoInfo"><strong>Soki — Call of Duty</strong><span>Video externo de YouTube</span></div>
-    </article>
-  </div>
-</section>
-
-<section class="resourceStrip">
-  <h2>🔗 Recursos oficiales y seguros</h2>
-  <p>Cuando una guía dependa de una cuenta, un canje o una descarga, Tony Games te manda a la fuente oficial.</p>
-  <div class="resourceBtns">
-    <a href="https://reward.ff.garena.com/" target="_blank" rel="noopener noreferrer">Garena Rewards ↗</a>
-    <a href="https://www.roblox.com/" target="_blank" rel="noopener noreferrer">Roblox ↗</a>
-    <a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer">Minecraft ↗</a>
-    <a href="https://supercell.com/en/games/brawlstars/" target="_blank" rel="noopener noreferrer">Brawl Stars ↗</a>
-    <a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer">Fortnite ↗</a>
-    <a href="https://www.callofduty.com/" target="_blank" rel="noopener noreferrer">Call of Duty ↗</a>
-    <a href="https://www.rockstargames.com/gta-v" target="_blank" rel="noopener noreferrer">GTA V ↗</a>
-  </div>
-</section>
-
-<footer class="footer">Tony Games — Portal gamer independiente.</footer>
-</div>
-<script>
-function buscar(){
- const q=(document.getElementById('search').value||'').toLowerCase().trim();
- document.querySelectorAll('[data-search]').forEach(el=>{el.style.display=(!q||el.dataset.search.includes(q))?'':'none';});
-}
-</script>
-</body>
-</html>
+<section class="section"><div class="wrap"><div class="sectionHead"><div><h2>🎮 Explora por juego</h2><p>Cada juego tiene una zona propia con varias guías.</p></div></div><div class="gameGrid"><a class="gameCard" href="codigos-free-fire.html"><img src="assets/game-freefire.png" alt="Free Fire"><strong>Free Fire</strong></a><a class="gameCard" href="roblox.html"><img src="assets/game-roblox.png" alt="Roblox"><strong>Roblox</strong></a><a class="gameCard" href="minecraft-ideas.html"><img src="assets/game-minecraft.png" alt="Minecraft"><strong>Minecraft</strong></a><a class="gameCard" href="brawl-stars.html"><img src="assets/game-brawl.png" alt="Brawl Stars"><strong>Brawl Stars</strong></a><a class="gameCard" href="fortnite.html"><img src="assets/game-fortnite.png" alt="Fortnite"><strong>Fortnite</strong></a><a class="gameCard" href="call-of-duty.html"><img src="assets/game-cod.png" alt="Call of Duty"><strong>Call of Duty</strong></a><a class="gameCard" href="gta-v.html"><img src="assets/game-gta.png" alt="GTA V / GTA Online"><strong>GTA V / GTA Online</strong></a></div></div></section>
+<section class="section"><div class="wrap"><div class="sectionHead"><div><h2>🔥 Guías para empezar</h2><p>Contenido propio pensado para resolver búsquedas reales.</p></div><a class="more" href="buscar.html">Buscar todas →</a></div><div class="grid3"><article class="card"><span class="tag">Free Fire</span><h3><a href="free-fire-codigos-oficiales.html">Cómo canjear códigos oficiales de Free Fire sin caer en estafas</a></h3><p>Los códigos promocionales cambian con el tiempo y pueden tener restricciones por región. La forma segura de comprobarlos es u…</p><a class="more" href="free-fire-codigos-oficiales.html">Leer →</a></article><article class="card"><span class="tag">Roblox</span><h3><a href="roblox-robux-seguro.html">Robux de forma segura: qué es real y qué señales indican una estafa</a></h3><p>Una web externa no puede crear Robux legítimos solo porque escribas tu nombre de usuario. Las promesas de Robux ilimitados su…</p><a class="more" href="roblox-robux-seguro.html">Leer →</a></article><article class="card"><span class="tag">Minecraft</span><h3><a href="minecraft-primeras-horas.html">Minecraft supervivencia: qué hacer durante tus primeras horas</a></h3><p>Madera, herramientas de piedra y comida suficiente te dan una base estable para explorar sin correr riesgos innecesarios.…</p><a class="more" href="minecraft-primeras-horas.html">Leer →</a></article><article class="card"><span class="tag">Brawl Stars</span><h3><a href="brawl-elegir-brawler.html">Cómo elegir brawler según mapa y modo, no solo por popularidad</a></h3><p>Muros, arbustos y espacios abiertos cambian qué alcances y habilidades funcionan bien.…</p><a class="more" href="brawl-elegir-brawler.html">Leer →</a></article><article class="card"><span class="tag">Fortnite</span><h3><a href="fortnite-zero-build.html">Fortnite Zero Build: cómo sobrevivir más sin esconderte toda la partida</a></h3><p>En Zero Build no puedes crear una pared al instante, así que la posición importa mucho más.…</p><a class="more" href="fortnite-zero-build.html">Leer →</a></article><article class="card"><span class="tag">Call of Duty</span><h3><a href="cod-configuracion.html">Call of Duty: ajustes básicos de sensibilidad, audio y controles</a></h3><p>Un ajuste que puedas repetir bajo presión suele ser mejor que uno extremadamente rápido que solo funciona a veces.…</p><a class="more" href="cod-configuracion.html">Leer →</a></article></div></div></section>
+<section class="section"><div class="wrap"><div class="sectionHead"><div><h2>📰 Novedades oficiales</h2><p>Selección editorial con enlace directo a la fuente original.</p></div><a class="more" href="noticias.html">Ver sección →</a></div><div class="newsGrid"><article class="newsCard"><span class="date">1 oct 2026 · Fortnite</span><h3>Fortnitemares 2026: la corrupción se extiende</h3><p>Fortnite publicó su actualización destacada de octubre en su página oficial de noticias.</p><a class="more" href="https://www.fortnite.com/news" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></article><article class="newsCard"><span class="date">1 oct 2026 · GTA Online</span><h3>Halloween durante todo octubre en GTA Online</h3><p>Rockstar anunció actividades temáticas de Halloween para GTA Online durante octubre.</p><a class="more" href="https://www.rockstargames.com/newswire/" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></article><article class="newsCard"><span class="date">19 sept 2026 · Brawl Stars</span><h3>Brawl Stars x Duolingo</h3><p>Supercell publicó la colaboración en el archivo oficial de noticias de Brawl Stars.</p><a class="more" href="https://supercell.com/en/games/brawlstars/blog/" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></article><article class="newsCard"><span class="date">15 sept 2026 · Free Fire</span><h3>Free Fire x NARUTO SHIPPUDEN</h3><p>Garena publicó el regreso del contenido de colaboración con Naruto Shippuden.</p><a class="more" href="https://ff.garena.com/en/news/" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></article><article class="newsCard"><span class="date">2 sept 2026 · Roblox</span><h3>Avance de juegos de otoño de Roblox</h3><p>Roblox presentó experiencias y actualizaciones previstas para otoño, incluidas novedades de octubre.</p><a class="more" href="https://about.roblox.com/es/newsroom/2026/09/roblox-fall-games-preview" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></article><article class="newsCard"><span class="date">sept 2026 · Minecraft</span><h3>Wilderness Bound</h3><p>Minecraft destacó Wilderness Bound y otras novedades en sus páginas oficiales.</p><a class="more" href="https://www.minecraft.net/en-us/live" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></article></div></div></section>
+<section class="section"><div class="wrap"><div class="sectionHead"><div><h2>⭐ Creadores recomendados</h2><p>Tony Games organiza enlaces externos; no representa a estos creadores.</p></div><a class="more" href="creadores.html">Ver todos →</a></div><div class="grid4"><article class="card"><span class="tag">Free Fire</span><h3>TheDonato</h3><p>Contenido externo recomendado para descubrir más sobre Free Fire.</p><a class="more" href="https://www.youtube.com/@thedonato" target="_blank" rel="noopener noreferrer">Ver creador ↗</a></article><article class="card"><span class="tag">Roblox</span><h3>Mikecrack</h3><p>Contenido externo recomendado para descubrir más sobre Roblox.</p><a class="more" href="https://www.mikecrack.com/" target="_blank" rel="noopener noreferrer">Ver creador ↗</a></article><article class="card"><span class="tag">Minecraft</span><h3>Mikecrack</h3><p>Contenido externo recomendado para descubrir más sobre Minecraft.</p><a class="more" href="https://www.mikecrack.com/" target="_blank" rel="noopener noreferrer">Ver creador ↗</a></article><article class="card"><span class="tag">Brawl Stars</span><h3>Trebor</h3><p>Contenido externo recomendado para descubrir más sobre Brawl Stars.</p><a class="more" href="https://www.youtube.com/watch?v=6Yp9hYwSju4" target="_blank" rel="noopener noreferrer">Ver creador ↗</a></article></div></div></section>
+<section class="section"><div class="wrap"><div class="notice"><strong>Tony Games es independiente.</strong> No vendemos Robux, diamantes, cuentas ni ventajas. Cuando una acción requiere una cuenta, canje o compra, enlazamos a fuentes oficiales.</div></div></section>
+</main>
+<footer class="footer"><div class="wrap footerGrid">
+      <div><strong>Tony Games</strong><p>Portal gamer independiente con guías, seguridad, creadores y enlaces a fuentes oficiales.</p></div>
+      <div><strong>Explorar</strong><a href="noticias.html">Novedades</a><a href="creadores.html">Creadores</a><a href="favoritos.html">Favoritos</a><a href="buscar.html">Buscar</a></div>
+      <div><strong>Transparencia</strong><a href="sobre.html">Sobre Tony Games</a><a href="equipo.html">Equipo editorial</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="contacto.html">Contacto</a></div>
+    </div></footer><script src="assets/site-v7.js"></script></body></html>

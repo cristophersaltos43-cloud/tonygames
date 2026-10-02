@@ -1,0 +1,28 @@
+TONY GAMES V7 — CONTENIDO REAL
+
+Esta versión incluye:
+- 21 guías nuevas: 3 por cada uno de los 7 juegos.
+- 7 zonas de juego completas.
+- Buscador interno real: buscar.html + assets/site-v7.js.
+- Favoritos con localStorage: favoritos.html.
+- Página de novedades con enlaces a fuentes oficiales.
+- Sobre Tony Games y Equipo editorial.
+- Seguridad gamer reforzada.
+- Creadores externos claramente identificados.
+- Sitemap y robots corregidos para:
+  https://cristophersaltos43-cloud.github.io/tonygames/
+- Diseño compartido en assets/site-v7.css.
+- Navegación interna y guías relacionadas.
+
+IMPORTANTE:
+1. No borres la carpeta assets que ya contiene las imágenes.
+2. Esta V7 añade también site-v7.css y site-v7.js dentro de assets.
+3. Para actualizar GitHub, lo más fácil es subir TODO el contenido de esta carpeta conservando la estructura.
+4. Si GitHub te pregunta por archivos existentes, el nuevo commit los reemplazará.
+5. Espera 1–2 minutos y recarga con Ctrl+F5.
+
+ANTES DE ADSENSE:
+- Crea un correo exclusivo de Tony Games y reemplaza el aviso de contacto.
+- Revisa que no haya enlaces rotos.
+- Sigue publicando contenido propio.
+- Mantén las novedades con fechas y fuentes reales.
