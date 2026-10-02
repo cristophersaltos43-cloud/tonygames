@@ -1,0 +1,37 @@
+TONY GAMES — GUÍA RÁPIDA
+
+Archivos:
+- index.html          Página principal
+- styles.css          Diseño
+- script.js           Buscador, filtros y guías
+- privacidad.html     Política de privacidad inicial
+- terminos.html       Términos
+- contacto.html       Contacto
+
+CÓMO PROBARLO
+1. Descomprime el archivo.
+2. Haz doble clic en index.html.
+3. Se abrirá en tu navegador.
+
+CÓMO PUBLICARLO GRATIS
+Opción sencilla: GitHub Pages
+1. Crea una cuenta en GitHub.
+2. Crea un repositorio, por ejemplo: tony-games.
+3. Sube todos estos archivos.
+4. En Settings > Pages, activa la publicación desde la rama principal.
+5. GitHub te dará una dirección pública.
+
+También puedes subirlo a Netlify o a un hosting propio.
+
+ANTES DE ADSENSE
+- Publica contenido original y útil.
+- Añade un correo real de contacto.
+- Revisa Política de privacidad y Términos.
+- No publiques códigos falsos.
+- No prometas diamantes, Robux o recompensas inexistentes.
+- Cuando AdSense apruebe el sitio, pega únicamente el código oficial de Google en index.html.
+
+IMPORTANTE
+Tony Games no debe presentarse como sitio oficial de Garena, Roblox, Mojang/Microsoft
+u otros desarrolladores. Usa las marcas únicamente para identificar los juegos de los
+que hablas.
