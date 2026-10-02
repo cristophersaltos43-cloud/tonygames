@@ -1,264 +1,102 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tony Games | Guías, códigos y novedades gamer</title>
-<meta name="description" content="Tony Games: guías, códigos oficiales, seguridad y contenido gamer de Free Fire, Roblox, Minecraft y más.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tony Games | Portal gamer</title>
+<meta name="description" content="Tony Games: guías, códigos, noticias y seguridad para gamers.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://cristophersaltos-cloud.github.io/tonygames/">
 <style>
-:root{
-  --bg:#07101c;--bg2:#0b1627;--panel:#101a2d;--panel2:#15243d;
-  --text:#f8fbff;--muted:#a7b4c9;--line:#29415f;
-  --blue:#0ba8ff;--cyan:#00d9ff;--green:#80ff33;--purple:#a855f7;
-  --yellow:#ffd43b;--red:#ff4655;--max:1200px
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  color:var(--text);background:
-  radial-gradient(circle at 15% 0%,rgba(11,168,255,.12),transparent 35%),
-  radial-gradient(circle at 85% 10%,rgba(168,85,247,.10),transparent 30%),
-  linear-gradient(180deg,#07101c,#08111e 60%,#07101c);
-}
-a{color:inherit;text-decoration:none}
-.container{width:min(var(--max),calc(100% - 32px));margin:auto}
-.topbar{
-  position:sticky;top:0;z-index:50;background:rgba(6,13,24,.88);
-  backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)
-}
-.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:950;font-size:20px}
-.logo{
-  width:44px;height:44px;display:grid;place-items:center;border-radius:13px;
-  color:#061018;background:linear-gradient(135deg,var(--cyan),var(--green));
-  box-shadow:0 0 30px rgba(0,217,255,.18)
-}
-.navlinks{display:flex;gap:20px;color:var(--muted);font-size:14px}
-.navlinks a:hover{color:white}
-.hero{
-  padding:28px 0 24px;
-}
-.hero-banner{
-  position:relative;min-height:520px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.08);
-  background:#0b1526;box-shadow:0 30px 90px rgba(0,0,0,.42)
-}
-.hero-banner img{
-  width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0
-}
-.hero-overlay{
-  position:absolute;inset:0;background:
-  linear-gradient(90deg,rgba(4,10,18,.84) 0%,rgba(4,10,18,.52) 48%,rgba(4,10,18,.18) 100%),
-  linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.48))
-}
-.hero-copy{
-  position:relative;z-index:2;max-width:720px;padding:70px 56px
-}
-.eyebrow{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}
-.hero-copy h1{font-size:clamp(46px,7vw,84px);line-height:.95;letter-spacing:-3px;margin:12px 0 18px}
-.hero-copy h1 span{background:linear-gradient(90deg,var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-copy p{font-size:18px;color:#d0d8e6;max-width:680px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-.btn{
-  padding:13px 18px;border-radius:13px;font-weight:900;display:inline-flex;align-items:center;gap:8px;
-  transition:.2s transform
-}
-.btn:hover{transform:translateY(-2px)}
-.btn-primary{background:var(--blue);color:white}
-.btn-secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
-.search{
-  margin-top:22px;display:flex;gap:10px;max-width:620px;background:rgba(6,13,24,.72);
-  border:1px solid rgba(255,255,255,.1);padding:8px;border-radius:16px
-}
-.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;padding:12px}
-.search button{border:0;border-radius:11px;background:var(--cyan);padding:0 18px;font-weight:900;color:#04121a}
-.section{padding:56px 0}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}
-.section h2{font-size:clamp(30px,4vw,50px);letter-spacing:-1.8px;line-height:1.05;margin:6px 0 0}
-.section p{color:var(--muted)}
-.games-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
-.game-card{
-  min-height:210px;border-radius:20px;padding:20px;position:relative;overflow:hidden;
-  background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
-  transition:.2s transform,.2s border-color,.2s box-shadow
-}
-.game-card:hover{transform:translateY(-5px);border-color:#456385;box-shadow:0 16px 44px rgba(0,0,0,.25)}
-.game-card .icon{font-size:36px}
-.game-card h3{font-size:20px;margin:16px 0 6px}
-.game-card small{color:var(--muted)}
-.game-card .tag{display:inline-block;margin-top:16px;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.06);font-size:11px;color:var(--accent)}
-.visual-feature{
-  display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch
-}
-.visual-box{
-  min-height:420px;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#0d1728
-}
-.visual-box img{width:100%;height:100%;object-fit:cover;display:block}
-.feature-copy{
-  padding:30px;border-radius:24px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line)
-}
-.feature-copy h3{font-size:34px;letter-spacing:-1.2px;line-height:1.05;margin:12px 0}
-.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.article-card{
-  padding:22px;border-radius:20px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line)
-}
-.article-card h3{font-size:22px;margin:12px 0 8px}
-.article-card p{font-size:14px}
-.badge{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900;background:rgba(11,168,255,.12);color:#8dd6ff}
-.popular{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:14px
-}
-.pop{
-  padding:18px;border-radius:18px;background:#0f192b;border:1px solid var(--line)
-}
-.pop span{font-size:12px;color:var(--green);font-weight:900}
-.pop h4{font-size:17px;margin:8px 0}
-.ad{
-  min-height:100px;margin:10px 0 50px;display:grid;place-items:center;text-align:center;
-  border:1px dashed #48607f;border-radius:18px;color:#6f7f97;background:rgba(255,255,255,.02)
-}
-.notice{
-  padding:16px;border-radius:16px;background:rgba(0,217,255,.06);border:1px solid rgba(0,217,255,.18);color:#d8f9ff
-}
-footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted)}
-.footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.links{display:flex;gap:14px;flex-wrap:wrap}
-@media(max-width:980px){
-  .games-grid{grid-template-columns:repeat(2,1fr)}
-  .visual-feature{grid-template-columns:1fr}
-  .article-grid,.popular{grid-template-columns:1fr}
-  .navlinks{display:none}
-}
-@media(max-width:560px){
-  .hero-copy{padding:44px 24px}
-  .hero-banner{min-height:560px}
-  .games-grid{grid-template-columns:1fr}
-  .hero-copy h1{letter-spacing:-2px}
-}
+:root{--bg:#06111d;--nav:#081827;--panel:#0d1d2d;--panel2:#10253a;--line:#213c56;--text:#fff;--muted:#aebdcc;--blue:#00b8ff;--cyan:#39d8ff;--lime:#8aff38;--yellow:#ffd632;--max:1536px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#06111d;color:#fff}
+a{color:inherit;text-decoration:none}.page{max-width:var(--max);margin:auto;background:linear-gradient(180deg,#06111d,#071522 60%,#06111d)}
+.top{height:70px;background:#071827;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:space-between;padding:0 7.8%;position:sticky;top:0;z-index:100}
+.brand{display:flex;align-items:center;gap:12px;font-weight:950;font-size:24px}.brand .logo{font-size:31px}.brand b{color:#13bfff}
+.nav{display:flex;align-items:center;gap:32px;font-size:15px}.nav a{color:#f3f8ff}.nav .active{background:#0c4675;padding:12px 16px;border-radius:10px}.searchIcon{font-size:28px}
+.hero{height:315px;position:relative;overflow:hidden;background:linear-gradient(90deg,#0c2137 0,#0b1c31 35%,#0c1e34 65%,#0c2137 100%)}
+.heroLeft,.heroRight{position:absolute;top:0;height:100%;object-fit:cover}.heroLeft{left:0;width:29.6%}.heroRight{right:0;width:29.7%}
+.heroCenter{position:absolute;left:29.5%;right:29.5%;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px;text-align:center}
+.heroCenter h1{font-size:42px;line-height:1.05;margin:0 0 10px;font-style:italic;text-transform:uppercase;text-shadow:0 2px 0 #101828;font-weight:950}
+.heroCenter h1 span{display:block;color:#28c7ff;font-size:50px}.heroCenter p{color:#d0d8e2;margin:0 0 16px}
+.searchBar{width:min(660px,100%);display:flex;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 0 0 2px rgba(255,255,255,.12)}
+.searchBar input{flex:1;border:0;outline:0;padding:14px 18px;font-size:15px}.searchBar button{width:110px;border:0;background:#14aef0;color:#fff;font-weight:800}
+.badges{display:flex;gap:14px;margin-top:15px;flex-wrap:wrap;justify-content:center}.badge{padding:9px 14px;border-radius:20px;background:#0b1b2c;border:1px solid rgba(255,255,255,.05);font-size:13px}
+.games{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;padding:18px 20px 20px;background:#081421}
+.game{border-radius:12px;overflow:hidden;border:1px solid #1d3550;background:#0e1d2c;transition:.2s}.game:hover{transform:translateY(-3px);box-shadow:0 0 0 2px #ffd400}.game img{width:100%;height:100px;object-fit:cover;display:block}.game strong{display:block;text-align:center;padding:9px 6px 10px;font-size:14px}
+.content{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:18px;padding:8px 20px 30px}
+.main h2{font-size:30px;margin:14px 0 20px}.main h2 span{margin-right:8px}
+.articles{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px}.article{background:#0d1c2c;border:1px solid #1c3650;border-radius:14px;overflow:hidden}.article img{width:100%;height:225px;object-fit:cover;display:block}.article.big img{height:225px}.articleBody{padding:14px 16px 16px}.label{display:inline-block;padding:5px 9px;border-radius:12px;background:#ff344d;font-size:11px;font-weight:900}.label.purple{background:#7c36f6}.label.green{background:#14a04d}.article h3{font-size:21px;margin:10px 0 8px;line-height:1.15}.article p{color:#aebdca;font-size:14px;margin:0 0 12px}.meta{color:#95a9bb;font-size:12px;display:flex;gap:18px}
+.smallRow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}.smallCard{background:#0d1c2c;border:1px solid #1c3650;border-radius:12px;overflow:hidden}.smallCard img{width:100%;height:90px;object-fit:cover;display:block}.smallCard div{padding:10px}.smallCard strong{font-size:14px;line-height:1.15}
+.side{padding-top:58px}.box{background:#0c1b2b;border:1px solid #1c3650;border-radius:14px;padding:15px;margin-bottom:14px}.box h3{margin:0 0 14px;font-size:18px}.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.social{height:44px;border-radius:11px;display:grid;place-items:center;background:#10253a;font-weight:900}.popular{display:grid;gap:7px}.popularItem{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.07)}.leftp{display:flex;align-items:center;gap:10px}.num{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#0d2a42;font-size:12px}.num.first{background:#ffd01a;color:#111;font-weight:900}
+.footer{padding:28px 20px 45px;color:#92a6b8;border-top:1px solid #173149;margin-top:10px}
+@media(max-width:1050px){.nav{gap:16px;font-size:13px}.heroLeft,.heroRight{opacity:.42}.heroCenter{left:8%;right:8%}.games{grid-template-columns:repeat(4,1fr)}.content{grid-template-columns:1fr}.side{padding-top:0}}
+@media(max-width:720px){.nav{display:none}.top{padding:0 16px}.hero{height:430px}.heroLeft,.heroRight{width:50%;opacity:.28}.heroCenter{left:16px;right:16px}.heroCenter h1{font-size:31px}.heroCenter h1 span{font-size:37px}.games{grid-template-columns:repeat(2,1fr);padding:14px}.content{padding:8px 14px 24px}.articles{grid-template-columns:1fr}.smallRow{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="container nav">
-  <a class="brand" href="index.html"><span class="logo">TG</span><span>Tony Games</span></a>
-  <nav class="navlinks">
-    <a href="#juegos">Juegos</a><a href="#destacados">Guías</a><a href="#popular">Popular</a>
-    <a href="codigos-free-fire.html">Free Fire</a><a href="contacto.html">Contacto</a>
-  </nav>
-</div></header>
+<div class="page">
+<header class="top">
+  <a class="brand" href="#"><span class="logo">🎮</span><span>TONY <b>GAMES</b> 👑</span></a>
+  <nav class="nav"><a class="active" href="#">⌂ Inicio</a><a href="#articulos">Guías</a><a href="codigos-free-fire.html">Códigos</a><a href="#articulos">Noticias</a><a href="#juegos">Juegos⌄</a><a href="seguridad-gamer.html">Consejos</a><a href="seguridad-gamer.html">Seguridad</a><a href="contacto.html">Contacto</a></nav>
+  <div class="searchIcon">⌕</div>
+</header>
 
-<main>
-<section class="container hero">
-  <div class="hero-banner">
-    <img src="assets/hero-tony-games.png" alt="Portal gamer Tony Games con temática de videojuegos">
-    <div class="hero-overlay"></div>
-    <div class="hero-copy">
-      <span class="eyebrow">PORTAL GAMER • GUÍAS • CÓDIGOS • SEGURIDAD</span>
-      <h1>Todo lo que un gamer busca, <span>en un solo lugar.</span></h1>
-      <p>Guías claras, contenido visual, códigos oficiales, seguridad para tu cuenta y temas populares de videojuegos.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#destacados">🔥 Ver lo más buscado</a>
-        <a class="btn btn-secondary" href="codigos-free-fire.html">🎁 Códigos Free Fire</a>
-      </div>
-      <div class="search">
-        <input id="q" placeholder="Buscar: Free Fire, Roblox, Minecraft...">
-        <button id="go">Buscar</button>
-      </div>
-      <small id="searchMsg" style="display:block;margin-top:10px;color:#c9d4e4"></small>
+<section class="hero">
+  <img class="heroLeft" src="assets/hero-left.png" alt="">
+  <img class="heroRight" src="assets/hero-right.png" alt="">
+  <div class="heroCenter">
+    <h1>TODO LO QUE UN GAMER <span>BUSCA EN UN SOLO LUGAR</span></h1>
+    <p>Guías, códigos, noticias, consejos y mucho más de tus juegos favoritos.</p>
+    <div class="searchBar"><input id="search" placeholder="Buscar guías, códigos o juegos..."><button onclick="buscar()">Buscar</button></div>
+    <div class="badges"><div class="badge">🛡 Contenido verificado</div><div class="badge">⚡ Actualizaciones constantes</div><div class="badge">🎮 Guías fáciles de seguir</div></div>
+  </div>
+</section>
+
+<section class="games" id="juegos">
+  <a class="game" data-search="free fire codigos diamantes"><img src="assets/game-freefire.png"><strong>Free Fire</strong></a>
+  <a class="game" data-search="roblox robux"><img src="assets/game-roblox.png"><strong>Roblox</strong></a>
+  <a class="game" data-search="minecraft semillas"><img src="assets/game-minecraft.png"><strong>Minecraft</strong></a>
+  <a class="game" data-search="brawl stars"><img src="assets/game-brawl.png"><strong>Brawl Stars</strong></a>
+  <a class="game" data-search="fortnite"><img src="assets/game-fortnite.png"><strong>Fortnite</strong></a>
+  <a class="game" data-search="call of duty"><img src="assets/game-cod.png"><strong>Call of Duty</strong></a>
+  <a class="game" data-search="gta v"><img src="assets/game-gta.png"><strong>GTA V</strong></a>
+</section>
+
+<section class="content" id="articulos">
+  <main class="main">
+    <h2><span>🔥</span>Artículos Destacados</h2>
+    <div class="articles">
+      <article class="article big"><img src="assets/article-freefire.png"><div class="articleBody"><span class="label">CÓDIGOS</span><h3>Códigos de Free Fire hoy</h3><p>Guía para canjear códigos de Free Fire de forma segura y revisar recompensas.</p><div class="meta"><span>📅 1 oct. 2026</span><span>◷ 5 min</span></div></div></article>
+      <article class="article"><img src="assets/article-roblox.png"><div class="articleBody"><span class="label purple">GUÍA</span><h3>Cómo conseguir Robux de forma segura</h3><p>Métodos oficiales, consejos y errores que debes evitar.</p><div class="meta"><span>📅 29 sep. 2026</span><span>◷ 6 min</span></div></div></article>
+      <article class="article"><img src="assets/article-minecraft.png"><div class="articleBody"><span class="label green">GUÍA</span><h3>Las mejores semillas de Minecraft</h3><p>Ideas para supervivencia, aldeas y biomas interesantes.</p><div class="meta"><span>📅 27 sep. 2026</span><span>◷ 4 min</span></div></div></article>
     </div>
-  </div>
-</section>
-
-<section class="container section" id="juegos">
-  <div class="section-head"><div><span class="eyebrow">CATEGORÍAS</span><h2>Elige tu juego</h2></div></div>
-  <div class="games-grid">
-    <article class="game-card" style="--accent:#ff6b6b" data-search="free fire diamantes codigos garena battle royale">
-      <div class="icon">🔥</div><h3>Free Fire</h3><small>Códigos, recompensas, seguridad y guías.</small><div class="tag">Códigos y consejos</div>
-    </article>
-    <article class="game-card" style="--accent:#b77cff" data-search="roblox robux codigos avatar juegos">
-      <div class="icon">🟪</div><h3>Roblox</h3><small>Robux, promociones, seguridad y experiencias.</small><div class="tag">Robux y promociones</div>
-    </article>
-    <article class="game-card" style="--accent:#80ff33" data-search="minecraft semillas granjas comandos supervivencia">
-      <div class="icon">🟩</div><h3>Minecraft</h3><small>Semillas, granjas, comandos y construcción.</small><div class="tag">Guías y semillas</div>
-    </article>
-    <article class="game-card" style="--accent:#00d9ff" data-search="fortnite battle royale noticias skins">
-      <div class="icon">⚡</div><h3>Fortnite</h3><small>Noticias, temporadas, consejos y novedades.</small><div class="tag">Noticias y trucos</div>
-    </article>
-    <article class="game-card" style="--accent:#ffd43b" data-search="otros juegos brawl stars call of duty gta">
-      <div class="icon">🎮</div><h3>Más juegos</h3><small>Brawl Stars, Call of Duty, GTA y otros.</small><div class="tag">Más contenido</div>
-    </article>
-  </div>
-</section>
-
-<section class="container section" id="destacados">
-  <div class="section-head"><div><span class="eyebrow">DESTACADO VISUAL</span><h2>Contenido que llama la atención</h2></div></div>
-  <div class="visual-feature">
-    <div class="visual-box"><img src="assets/gaming-showcase.png" alt="Diseño gamer Tony Games con secciones de videojuegos"></div>
-    <div class="feature-copy">
-      <span class="badge">TONY GAMES V3</span>
-      <h3>Más visual, más útil y mucho más gamer.</h3>
-      <p>Esta versión combina guías reales con una estética mucho más fuerte. La idea es que el usuario encuentre algo interesante apenas entre y tenga razones para seguir navegando.</p>
-      <a class="btn btn-primary" href="codigos-free-fire.html">Leer guía de Free Fire</a>
-      <a class="btn btn-secondary" href="seguridad-gamer.html">Ver seguridad gamer</a>
+    <div class="smallRow">
+      <div class="smallCard"><img src="assets/small-brawl.png"><div><span class="label">CONSEJOS</span><br><strong>Consejos para mejorar en Brawl Stars</strong></div></div>
+      <div class="smallCard"><img src="assets/small-fortnite.png"><div><span class="label purple">NOTICIAS</span><br><strong>Novedades de Fortnite</strong></div></div>
+      <div class="smallCard"><img src="assets/small-cod.png"><div><span class="label green">GUÍA</span><br><strong>Configuraciones para Call of Duty</strong></div></div>
     </div>
-  </div>
+  </main>
+  <aside class="side">
+    <div class="box"><h3>🎮 Síguenos</h3><div class="socials"><div class="social">▶</div><div class="social">♪</div><div class="social">◎</div><div class="social">◉</div></div><p style="color:#9eb0c2;font-size:13px">¡Únete a nuestra comunidad gamer!</p></div>
+    <div class="box"><h3>🎮 Juegos Populares</h3><div class="popular">
+      <div class="popularItem"><div class="leftp"><span class="num first">1</span><strong>Free Fire</strong></div><span>›</span></div>
+      <div class="popularItem"><div class="leftp"><span class="num">2</span><strong>Roblox</strong></div><span>›</span></div>
+      <div class="popularItem"><div class="leftp"><span class="num">3</span><strong>Minecraft</strong></div><span>›</span></div>
+      <div class="popularItem"><div class="leftp"><span class="num">4</span><strong>Brawl Stars</strong></div><span>›</span></div>
+      <div class="popularItem"><div class="leftp"><span class="num">5</span><strong>Fortnite</strong></div><span>›</span></div>
+      <div class="popularItem"><div class="leftp"><span class="num">6</span><strong>Call of Duty</strong></div><span>›</span></div>
+      <div class="popularItem"><div class="leftp"><span class="num">7</span><strong>GTA V</strong></div><span>›</span></div>
+    </div></div>
+  </aside>
 </section>
-
-<section class="container section">
-  <div class="section-head"><div><span class="eyebrow">ARTÍCULOS</span><h2>Guías destacadas</h2></div></div>
-  <div class="article-grid">
-    <article class="article-card" data-search="free fire codigos garena canjear">
-      <span class="badge">FREE FIRE</span><h3>Cómo canjear códigos de Free Fire</h3>
-      <p>Aprende dónde canjearlos, por qué pueden vencer y cómo evitar páginas falsas.</p>
-      <a class="btn btn-primary" href="codigos-free-fire.html">Leer guía</a>
-    </article>
-    <article class="article-card" data-search="seguridad estafas diamantes robux phishing">
-      <span class="badge">SEGURIDAD</span><h3>Cómo evitar estafas de diamantes y Robux</h3>
-      <p>Señales de alerta, APK sospechosas, dominios falsos y protección de cuentas.</p>
-      <a class="btn btn-primary" href="seguridad-gamer.html">Leer guía</a>
-    </article>
-    <article class="article-card" data-search="minecraft semillas survival granjas comandos">
-      <span class="badge">MINECRAFT</span><h3>Ideas y guías para Minecraft</h3>
-      <p>Supervivencia, semillas, granjas, comandos y contenido útil para nuevos mundos.</p>
-      <a class="btn btn-primary" href="minecraft-ideas.html">Leer guía</a>
-    </article>
-  </div>
-</section>
-
-<section class="container section" id="popular">
-  <div class="section-head"><div><span class="eyebrow">LO MÁS BUSCADO</span><h2>Temas populares</h2></div></div>
-  <div class="popular">
-    <div class="pop"><span>01</span><h4>Códigos de Free Fire</h4><p>Canje, vencimiento y recompensas.</p></div>
-    <div class="pop"><span>02</span><h4>Robux y promociones</h4><p>Qué es real y qué puede ser una estafa.</p></div>
-    <div class="pop"><span>03</span><h4>Semillas de Minecraft</h4><p>Contenido útil para nuevos mundos.</p></div>
-  </div>
-</section>
-
-<section class="container"><div class="ad"><div><strong>ESPACIO PREPARADO PARA ADSENSE</strong><br><small>Se activará cuando Google apruebe la cuenta y el sitio.</small></div></div></section>
-
-<section class="container section"><div class="notice"><strong>Tony Games</strong> es un portal independiente. Las marcas y videojuegos mencionados pertenecen a sus respectivos propietarios.</div></section>
-</main>
-
-<footer><div class="container footer">
-  <div><strong>Tony Games</strong><br><small>Guías, códigos y contenido gamer.</small></div>
-  <div class="links"><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="contacto.html">Contacto</a></div>
-</div></footer>
-
+<footer class="footer">Tony Games — Portal gamer independiente.</footer>
+</div>
 <script>
-const input=document.getElementById('q');
-const msg=document.getElementById('searchMsg');
-function runSearch(){
-  const q=(input?.value||'').toLowerCase().trim();
-  const items=[...document.querySelectorAll('[data-search]')];
-  let n=0;
-  items.forEach(el=>{
-    const ok=!q || el.dataset.search.includes(q) || el.innerText.toLowerCase().includes(q);
-    el.style.display=ok?'block':'none';
-    if(ok)n++;
-  });
-  if(msg) msg.textContent=q?(n?`Encontré ${n} resultado(s).`:'Todavía no tenemos esa guía, la añadiremos pronto.'):'';
+function buscar(){
+ const q=(document.getElementById('search').value||'').toLowerCase().trim();
+ document.querySelectorAll('[data-search]').forEach(el=>{el.style.display=(!q||el.dataset.search.includes(q))?'':'none';});
 }
-document.getElementById('go')?.addEventListener('click',runSearch);
-input?.addEventListener('keydown',e=>{if(e.key==='Enter')runSearch()});
 </script>
-</body></html>
+</body>
+</html>

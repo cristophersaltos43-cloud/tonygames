@@ -1,0 +1,14 @@
+TONY GAMES V5 — COPIA VISUAL DE LA REFERENCIA
+
+Esta versión fue construida usando la captura que enviaste como referencia directa.
+
+SUBIR:
+1. Descomprime Tony_Games_V5.zip.
+2. En GitHub sube los archivos de la raíz.
+3. En la carpeta assets sube todas las imágenes de assets.
+4. Haz Commit changes.
+5. Espera 1–2 minutos.
+6. Abre la web y presiona Ctrl+F5.
+
+IMPORTANTE:
+La estructura está pensada para verse muy similar a la referencia en PC y adaptarse a móvil.
